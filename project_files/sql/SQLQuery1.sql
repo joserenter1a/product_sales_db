@@ -10,11 +10,11 @@ a.cost_price,
 a.image_url,
 b.date,
 b.Customer_Type,
-b.discount_band,
-b.units_sold,
+b.Discount_Band,
+b.Units_Sold,
 (sale_price * Units_Sold) as revenue,
 (cost_price*Units_Sold) as total_cost,
-format(date,'MMM') as month,
+format(date,'MMMM') as month,
 format(date,'yyyy') as year
 from Product_data a
 join product_sales b
@@ -22,8 +22,8 @@ on a.Product_ID = b.Product)
 
 
 select 
-*,
-1-discount*1.0/100
+*, 
+(1-discount*1.0/100) * revenue as discount_revenue
 from cte a
 join discount_data b
-on a.discount_band = b.discount_band and a.month = b.month
+on a.Discount_Band = b.Discount_Band and a.month = b.month
