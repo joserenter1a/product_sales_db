@@ -12,6 +12,6 @@ select
 	location, 
 	q1_2025,
 	q1_2024,
-	 (q1_2025 - q1_2024)/q1_2024 as ps_upsell_growth
+	 (q1_2025 - q1_2024)/q1_2024 * 100 as ps_upsell_growth
 
-from sales_data;
+from sales_data where location = 'Portland';
