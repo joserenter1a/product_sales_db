@@ -1,0 +1,2 @@
+location,total_rentals,pct_upsell,pct_upsell_pymo,pct_upsell_growth,ps_upsell_days,ps_rate,revenue_goal,pct_to_goal,ps_upsell_rev,ps_upsell_rev_pymo,ps_upsell_rev_growth,ps_rev_per_unit,pct_to_goal,per_unit_rank,ps_upsell_rank,ps_rate_rank,pct_upsell_rank,avg_rank,area_of_opportunity,area_of_op_index,area_of_op_name
+PORTLAND,"14,028",9.90%,4.00%,147.50%,163,$27.00,"$20,000.00",77.49%,"$15,497","$11,246",37.80%,$1.10,64%,12,10,14,11,11,14,2,ps_rate_rank
